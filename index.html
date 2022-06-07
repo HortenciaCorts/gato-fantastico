@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>document.documentElement.className += ' js';</script>
   <link rel="stylesheet" href="css/styles.css">
   <title>Gato Fantástico</title>
 </head>
 
 <body>
-  <nav class="menu">
+  <nav class="menu js-menu">
     <ul>
       <li><a href="#animais">Animais</a></li>
       <li><a href="#faq">Faq</a></li>
@@ -19,16 +20,16 @@
     </ul>
   </nav>
 
-  <section id="animais" class="grid-section animais">
+  <section class="grid-section animais js-scroll" id="animais">
     <h1 class="titulo">Gato Fantástico</h1>
-    <ul class="animais-lista">
+    <ul class="animais-lista js-tabmenu">
       <li><img src="img/derico1.jpeg" alt="Imagem de um gato olhando para trás"></li>
       <li><img src="img/derico2.jpeg" alt="Imagem de um gato olhando para o lado"></li>
       <li><img src="img/derico3.jpeg" alt="Imagem de um gato deitado no colo"></li>
       <li><img src="img/derico4.jpeg" alt="Imagem de um gato refletida"></li>
       <li><img src="img/derico5.jpeg" alt="Imagem de um gato deitado na cama"></li>
     </ul>
-    <div class="animais-descricao">
+    <div class="animais-descricao js-tabcontent">
       <section>
         <h3>Frederico</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dicta explicabo officiis sunt tenetur, consectetur reprehenderit perspiciatis? Rem, ea dolorum?</p>
@@ -62,9 +63,9 @@
     </div>
   </section>
 
-  <section class="grid-section faq" id="faq">
+  <section class="grid-section faq js-scroll" id="faq">
     <h2 class="titulo">FAQ</h2>
-    <dl class="faq-lista">
+    <dl class="faq-lista js-accordion">
       <dt>Qual a idade do animal</dt>
       <dd>Esse lindo gatinho tem 10 meses de vida Lorem ipsum dolor sit.</dd>
       <dt>Ele é realmente fantástico?</dt>
@@ -78,7 +79,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato" id="contato">
+  <section class="grid-section contato js-scroll" id="contato">
     <h2 class="titulo">Contato</h2>
     <div class="mapa">
       <img src="img/mapa.png" alt="">
@@ -95,7 +96,7 @@
     <p>Todos os direitos reservados.</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
